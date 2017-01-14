@@ -1,0 +1,78 @@
+.btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 7px 25px;
+    font-size: 14px;
+    font-family: $font-heading;
+    border-radius: 100px;
+    border: none;
+    cursor:pointer;
+    i {
+        padding-left: 10px;
+        transition: all 0.3s;
+        &.on-left {
+            padding-left: 0px;
+            padding-right: 10px;
+        }
+    }
+    &:hover {
+        i {
+            padding-left: 15px;
+
+            &.on-left {
+                padding-left: 0px;
+                padding-right: 15px;
+            }
+        }
+    }
+    &.btn-large {
+        font-size: 16px;
+        padding: 12px 33px;
+        font-weight: 900;
+    }
+    &.btn-small {
+        font-size: 11px;
+        padding: 6px 20px;
+        font-weight: 900;
+        margin-top: 3px;
+    }
+
+}
+
+.btn-primary {
+    @extend .btn;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.08), 0 3px 11px lighten($color-btn, 31%);
+    background: $color-btn;
+    color: #ffffff;
+    &:hover {
+         background: darken($color-btn, 3%);
+    }
+
+}
+
+.btn-white {
+    @extend .btn;
+    background: #ffffff;
+    color:$color-btn;
+
+}
+
+.btn-outline {
+    @extend .btn;
+    border: 1px solid $color-btn;
+    color: $color-btn;
+    &:hover {
+        background: darken($color-btn, 0%);
+        color: #ffffff;
+    }
+}
+
+.btn-white-o {
+    @extend .btn;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    &:hover {
+        background: #ffffff;
+        color: $color-btn;
+    }
+}

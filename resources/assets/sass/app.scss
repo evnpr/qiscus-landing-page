@@ -1,0 +1,31 @@
+// helpers
+@import "helpers/variables";
+
+// base
+@import "base/reset";
+@import "base/base";
+
+//layouts
+@import "layouts/grid";
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/info";
+
+//components
+@import "components/nav";
+@import "components/slider";
+@import "components/typo";
+@import "components/button";
+@import "components/form";
+
+
+// pages
+@import "pages/index";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/pricing";
+@import "pages/programs";
+@import "pages/solutions";
+@import "pages/legal";
+@import "pages/join";
+

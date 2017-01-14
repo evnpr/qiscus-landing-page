@@ -1,0 +1,52 @@
+
+// Body
+$body-bg: #fbfbfb;
+
+
+// costum color 
+
+// $color-primary   : #02b875;
+$color-primary   : #42746a;
+$color-secondary : #2c4765;
+$color-3rd       : #ee8252;
+$color-btn       : #00d664;
+
+$color-dark      : #0d1722;
+$color-soft      : #f5f8fa;
+
+// Brands
+$brand-info      : #8eb4cb;
+$brand-success   : #2ab27b;
+$brand-warning   : #cbb956;
+$brand-danger    : #bf5329;
+
+$color-error    : #ea5353;
+$color-success  : #9ddc5c;
+
+// Typography
+$font: "Lato", sans-serif;
+$font-heading: 'Lato', sans-serif;;
+
+$font-size-base: 14px;
+$line-height-base: 1.6;
+
+
+// responsive 
+
+$break-small: 480px;
+$break-large: 1024px;
+
+@mixin respond-to($media) {
+    @if $media == handhelds {
+        @media only screen and (max-width: $break-small) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and (min-width: $break-large) { @content; }
+    }
+    @else if $media == view-mobile {
+        @media only screen and (max-width: 800px) { @content; }
+    }
+}

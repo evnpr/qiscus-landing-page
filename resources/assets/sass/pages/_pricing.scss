@@ -1,0 +1,23 @@
+.section-form {
+    padding: 20px 0px;
+    .divider {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .field {
+        display: inline-block;
+        width: 48%;
+        margin-bottom: 10px;
+    }
+
+    .separator {
+        width: 2%;
+        display: inline-block;
+    }
+
+    button {
+        float: right;
+        margin-right: 2%;
+    }
+}

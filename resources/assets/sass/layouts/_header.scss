@@ -1,0 +1,62 @@
+.header-page {
+    background: url(../images/header.jpg)no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    &#contact {
+        background: url(../images/header_contact.jpg)no-repeat center center;
+    }
+
+    &#sdk {
+        background: url(../images/header_sdk.jpg)no-repeat center center;
+    }
+
+    &#about {
+        background: url(../images/about.jpg)no-repeat center center;
+    }
+
+    &#pricing {
+        background: url(../images/pricing.jpg)no-repeat center center;
+        height: auto;
+    }
+
+    &#program {
+        background: url(../images/program.jpg)no-repeat center center;
+     }
+
+    &#bot {
+        background: url(../images/bot.jpg)no-repeat center center;
+    }
+
+
+    &#accelerator {
+        background: url(../images/accelerator.jpg)no-repeat center center;
+    }
+
+    &#legal {
+        background: url(../images/legal.jpg)no-repeat center center;
+        height: auto;
+
+    &#join {
+        background: url(../images/join.jpg)no-repeat center center;
+    }    
+
+    }
+    &#talks {
+        height: auto;
+    }
+
+
+
+    .content-header {
+        padding: 60px 0px;
+        max-width: 500px;
+        h1 {
+            font-weight: 900;
+        }
+        p {
+            font-size: 16px;
+            line-height: 28px;
+            padding-top: 20px;
+        }
+    } 
+}

@@ -1,0 +1,28 @@
+section.section-info {
+    // background: #00d664;
+    background: url(../images/back-info.jpg)no-repeat center center fixed;
+    color: $color-soft;
+    padding: 60px 0px;
+    h3 {
+        font-size: 18px;
+        padding: 20px 0px;
+        color: $color-soft;
+    }
+
+    h4 {
+        color: $color-soft;
+        padding-bottom: 10px;
+    }
+    h2.heading {
+        color: $color-soft;
+    }
+
+    .divider {
+        background: #fff;
+        color: $color-soft;
+    }
+
+    a {
+        margin: 10px 15px;
+    }
+}

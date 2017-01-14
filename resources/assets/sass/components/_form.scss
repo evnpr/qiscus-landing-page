@@ -1,0 +1,140 @@
+form.form-default{
+    
+    .field {
+        position: relative;
+        margin-bottom: 15px;
+        input,
+        select,
+        textarea {
+            padding: 15px 20px;
+            width: 100%;
+            border: 1px solid #d8e3f2;
+            background: #f9fcfc;
+            border-radius: 8px;
+            font-family: $font;
+            &:focus {
+                outline: none;
+                box-shadow: 0px 0px 0px 1px #679ee8;
+            }
+        }
+
+        &.with-icon {
+            i {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+            }
+            input,
+            select,
+            textarea {
+                padding-left: 45px;
+
+            }           
+        }
+
+        &.field-error {
+            input,
+            select,
+            textarea {
+                padding-left: 45px;
+                border-color: $color-error;
+                color: $color-error;
+                border-width: 2px;
+            }
+            i {
+                color: $color-error;
+            }
+ 
+        }
+
+        &.field-success {
+            input,
+            select,
+            textarea {
+                 border-color: $color-success;
+             }
+
+            span {
+                color: $color-success
+             }
+           
+        }
+
+    }
+    span {
+        position: absolute;
+        right: 20px;
+        top: 17px;
+
+        &.zmdi-alert-circle-o {
+            color: $color-error;
+            animation : whozz 0.3s linear infinite alternate;
+        }
+    }
+
+    textarea {
+        line-height: 24px;
+    }
+
+    .field-checkbox {
+        cursor: pointer;
+        font-size: 11px;
+        position: relative;
+        padding-left: 25px;
+        margin-top: 15px;
+        display: inline-block;
+        input[type='checkbox']{
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+
+            &:checked + span {
+                background: $color-btn;
+                color: #ffffff;
+                border-color: $color-btn;
+                &:after {
+                    transform: scale(1);  
+                    opacity: 1;
+                }
+            }
+        }
+
+        .field-checkbox-style {
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            text-align: center;
+            font-weight: bold;
+            background: #f9fcfc;
+            border: 1px solid #d8e3f2;
+            border-radius: 3px;
+            left: 0px;
+            top: -3px;
+            text-shadow: 0px 1px 0px #525d6f;
+            transition:all 0.3s;
+            &:after {
+                font: normal normal normal 14px/1 'Material-Design-Iconic-Font';    
+                content: '\f26b';
+                transform: scale(0);
+                opacity: 0;
+                transition:all 0.4s;
+            }
+        }
+
+        
+    }
+
+}
+
+
+@keyframes whozz {
+    0% {
+        transform: translateX(0px)
+    } 
+    50% {
+        transform: translateX(-2px)
+    }
+    100% {
+        transform: translateX(2px)
+    }
+}
